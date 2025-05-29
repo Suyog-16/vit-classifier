@@ -1,0 +1,19 @@
+# config.yml
+model:
+  name: mobilevit_xxs
+  pretrained: true
+  num_classes: 10
+
+train:
+  epochs: 10
+  batch_size: 32
+  learning_rate: 0.001
+
+dataset:
+  name: CIFAR10
+  data_dir: "./data"
+  image_size: 224
+  normalize_mean: [0.5, 0.5, 0.5]
+  normalize_std: [0.5, 0.5, 0.5]
+
+device: "cuda"
